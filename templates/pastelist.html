@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Roberta Ružic">
+    <title>Pastebin Clone</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/paste.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-md justify-content-center">
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">New</a>
+            <a class="navbar-brand" href="/pastelist">List</a>
+        </nav>
+        <div class="card pt-3" style="height:100vh">
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                      <th scope="col">Slug</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Content</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {%for document in documents%}
+                    <tr>
+                      <td><a style="text-decoration:none;" href="/paste/{{document[2]}}">{{document[2]}}</a></td>
+                      <td>{{document[0]}}</td>
+                      <td>{{document[1]}}</td>
+                    </tr>
+                {%endfor%}
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+</html>

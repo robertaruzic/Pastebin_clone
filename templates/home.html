@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Roberta Ružic">
+    <title>Pastebin Clone</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/home.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-md align-items-center">
+        <nav class="navbar sticky-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">New</a>
+            <a class="navbar-brand" href="/pastelist">List</a>
+        </nav>
+        <div class="card pt-3" style="height:100vh">
+            <div class="card-body">
+                <div class="mx-auto max-w">
+                    <h1 class="card-title" style="color:white;">Pastebin Clone</h1>
+                    <p class="card-text" style="color: #7E7E7F;">Make a paste!</p>
+
+                    <form method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control shadow-none" id="Ime" name="name" placeholder="Name"  required>
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <textarea class="form-control shadow-none" rows="5" id="Bio" name="content" placeholder="Your text goes here" required></textarea>
+                        </div>
+                        <br>
+
+                        <button type="submit" value="submit" class="btn btn-primary px-4" style="background-color: #517FDB">Paste</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+appwrite~=2.0.0
+Flask~=2.3.2

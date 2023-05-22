@@ -1,0 +1,59 @@
+body {
+    background: #131313 !important;
+    height: 100% !important;
+}
+
+.card {
+    background-color: #242424 !important;
+    border-radius: 0px !important;
+}
+
+input, textarea {
+    background-color: #242424 !important;
+    border-color: #7E7E7F !important;
+    color: white !important;
+}
+
+input:focus{
+    border-color: #517FDB !important;
+}
+
+.max-w {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+    .max-w {
+        max-width: 100%;
+    }
+    body {
+        background: #242424 !important;
+    }
+    .card {
+        border-color: #242424 !important;
+        width: 100% !important;
+    }
+}
+
+
+.card-title {
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 3rem !important;
+}
+
+.card-text{
+    font-family: 'Poppins' !important;
+    font-style: medium !important;
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+}
+
+form {
+    font-family: 'Nunito' !important;
+    font-style: medium !important;
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+}
+
